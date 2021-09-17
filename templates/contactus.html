@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+<html>
+	<<head>
+	<link rel="icon"  href="{{url_for('static',filename = 'images/images1.png')}}" alt="">
+		<title>Retina.Ai</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="index.html" id="logo">RETINA.AI</a></h1>
+
+						</div>
+					</div>
+				</header>
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href={{url_for("i")}}>Home</a></li>
+						<li><a href={{url_for("p")}}>Predict</a></li>
+
+						<li><a href={{url_for("c")}}>Contact Us</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<!-- <section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="content">
+
+									<!-- Content -->
+
+										<!-- <article class="box page-content">
+
+											<header>
+												<h2>No Sidebar</h2>
+												<p>Semper amet scelerisque metus faucibus morbi congue mattis</p>
+												<ul class="meta">
+													<li class="icon fa-clock">5 days ago</li>
+													<li class="icon fa-comments"><a href="#">1,024</a></li>
+												</ul>
+											</header>
+
+											<section>
+												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
+												<p>
+													Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+													Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+													Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+													consequat etiam lorem ipsum dolor sit amet nullam.
+												</p>
+											</section> -->
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center"><!-- 
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Contact Form </h2>
+				</div> -->
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-7 d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Get in touch</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="reset" value="Send Message" class="btn" style="background-color: #b1ddab;">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap  w-100 p-lg-5 p-4" style="background-color: #b1ddab;">
+									<h3 class="mb-4 mt-md-4">Contact us</h3>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p style="color:white;"><span >Address:</span> A random non relevant address</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> <a href="tel://1234567920">+919999900000</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">18dcs128@charusat.edu.in</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+			<footer id="footer">
+					<div class="container">
+
+
+
+						<!-- Copyright -->
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Retina.Ai - 2021</li><li>All rights reserved</li>
+								</ul>
+							</div>
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.dropotron.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}" type="text/javascript"></script>
+			<script src="{{ url_for('static', filename='js/jquery.dropotron.min.js') }}" type="text/javascript"></script>
+			<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}" type="text/javascript"></script>
+			<script src="{{ url_for('static', filename='js/browser.min.js') }}" type="text/javascript"></script>
+			<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}" type="text/javascript"></script>
+			<script src="{{ url_for('static', filename='js/util.js') }}" type="text/javascript"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+
+	</body>
+</html>
